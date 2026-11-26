@@ -21,6 +21,8 @@ switches hourly runs off after 60 days without changes; "Run workflow" switches 
   screenshots come from the apps' own repos (1200 px wide, rounded corners, WebP).
 - `tools/make.py`: draws the banner (light and dark), the five steps, the divider and the buttons:
   `python3 tools/make.py profile/assets`
+- `docs/mindmacher/yourplace/index.html`: the short address. Uploaded by hand as `yourplace/index.html`
+  on mindmacher.com, it forwards mindmacher.com/yourplace/ to the page. It is not copied anywhere by itself.
 - `tools/preview.py`: a local look-alike of the page, to check a change before it goes out
   (needs `pip install markdown`): `python3 tools/preview.py .`
 
