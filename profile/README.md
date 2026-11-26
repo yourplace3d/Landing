@@ -65,7 +65,7 @@ licence:    MIT
 
 ## 🤝 Using it for work
 
-**Can I sell prints or posters made with it?** Yes. Everything is built from open map data, so what you make is yours to use, selling included. Keep the credit wherever you show or sell it: "Map data © OpenStreetMap contributors".
+**May I use what I make?** Yes, privately and for work. Everything is built from open map data. Keep the credit wherever you show it: "Map data © OpenStreetMap contributors".
 
 **Print shop, school or company?** If Your Place is nearly what you need but not quite, say what is missing: [yourplace3d@gmail.com](mailto:yourplace3d@gmail.com).
 
