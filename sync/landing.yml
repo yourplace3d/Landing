@@ -1,0 +1,22 @@
+# Copies the landing page from yourplace3d/landing into this repo's profile/ folder.
+name: Landing page
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 * * * *'
+permissions:
+  contents: write
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git clone --depth 1 https://github.com/yourplace3d/landing src
+          test -f src/profile/README.md
+          rm -rf profile && cp -r src/profile profile && rm -rf src
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profile
+          git diff --cached --quiet || { git commit -m "Landing page: copy from yourplace3d/landing"; git push; }
